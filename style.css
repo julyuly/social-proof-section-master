@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+main {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+    width:100%;
+    height:fit-content;
+    background-image: url(images/bg-pattern-bottom-mobile.svg),url(images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 4rem 2rem;
+
+}
+
+.top {
+    display:flex;
+    flex-direction:row; 
+    flex-wrap: wrap;
+    max-width:100%;
+    text-align:center;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.top-left {
+    display:flex;
+    max-width:50%;
+}
+
+header {
+    font-size:30px;
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+    width:100%;
+}
+
+.top-left p {
+    color:hsl(303, 10%, 53%);
+}
+
+.top-right {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    max-width:100%;
+    gap:2rem;
+    height:auto;
+    color:hsl(300, 43%, 22%);
+    font-weight:bold;
+    font-size:15px;
+    justify-content:flex-end;
+    align-items:center;
+    margin-right:auto;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    margin:1.5rem;
+    
+}
+
+.reviews {
+    background-color: hsl(300, 24%, 96%);
+    display:flex;
+    flex-direction: row;
+    flex:1;
+    width:100%;
+    border-radius:10px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:0rem 2rem;
+}
+
+.guru {
+    background-color: hsl(300, 24%, 96%);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius:10px;
+    width:100%;
+    flex:1;
+    justify-content: space-evenly;
+    padding:0rem 2rem;
+    margin-left:2rem;
+}
+
+
+.besttech {
+    background-color: hsl(300, 24%, 96%);
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    align-items: center;
+    border-radius:10px;
+    width:100%;
+    flex:1;
+    margin-left:4rem;
+    justify-content: space-evenly;
+    padding:0rem 2rem;
+}
+
+
+
+.bottom {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+    margin: 0;
+    gap:2rem;
+    max-width: 100%;
+    margin:auto;
+   
+}
+
+.bottom article {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    color: white;
+  }
+
+.profile {
+    display:flex;
+    align-items:center;
+}
+
+.profile h5 {
+    margin:0;
+}
+
+
+.bottom img {
+ border-radius:50%;
+ max-width: 2rem;
+ height:2rem;
+ margin-right:1rem;
+
+}
+  
+.bottom span {
+    color: hsl(333, 80%, 67%);
+    font-size: 0.7rem; 
+  }
+
+.summary {
+    margin-top:1rem;
+    line-height:1rem;
+}
+   
+.roberts {
+    margin-top:1rem;
+}
+
+.wallace {
+    margin-top:2rem;
+}
+
+
+
+
+
+  
+
+@media only screen and (min-width:375px) and (max-width:800px) {
+
+.top {
+    flex-wrap:wrap;
+    margin:0;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.top-left {
+   max-width:100%;
+}
+
+.bottom {
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+.top-right {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .guru, .besttech, .reviews {
+    margin: 0;
+    display:block;
+    
+  }
+
+  .stars {
+    align-items: center;
+    justify-content: center;;
+    margin:1rem;
+  }
+
+  .smith , .roberts , .wallace {
+    margin-bottom: 2rem;
+  }
+
+
+}
+
+
+    
+
+  
